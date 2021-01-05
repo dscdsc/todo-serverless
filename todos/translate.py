@@ -22,8 +22,7 @@ def gettranslate(event, context):
     
     slang = response_lang['Languages']
     
-    result_translate = translate.translate_text(Text=result['Item']['text'], 
-            SourceLanguageCode=slang, TargetLanguageCode=event['pathParameters']['language'])
+    result_translate = translate.translate_text(Text=result['Item']['text'], SourceLanguageCode=slang, TargetLanguageCode=event['pathParameters']['language'])
     
     result['Item']['text'] = result_translate.get('TranslatedText')
     

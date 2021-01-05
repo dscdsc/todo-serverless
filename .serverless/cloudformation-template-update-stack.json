@@ -188,7 +188,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846013406-2021-01-05T11:26:53.406Z/serverless-rest-api-with-dynamodb.zip"
+          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846424225-2021-01-05T11:33:44.225Z/serverless-rest-api-with-dynamodb.zip"
         },
         "FunctionName": "serverless-rest-api-with-dynamodb-dev-create",
         "Handler": "todos/create.create",
@@ -228,7 +228,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846013406-2021-01-05T11:26:53.406Z/serverless-rest-api-with-dynamodb.zip"
+          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846424225-2021-01-05T11:33:44.225Z/serverless-rest-api-with-dynamodb.zip"
         },
         "FunctionName": "serverless-rest-api-with-dynamodb-dev-list",
         "Handler": "todos/list.list",
@@ -268,7 +268,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846013406-2021-01-05T11:26:53.406Z/serverless-rest-api-with-dynamodb.zip"
+          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846424225-2021-01-05T11:33:44.225Z/serverless-rest-api-with-dynamodb.zip"
         },
         "FunctionName": "serverless-rest-api-with-dynamodb-dev-get",
         "Handler": "todos/get.get",
@@ -308,10 +308,10 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846013406-2021-01-05T11:26:53.406Z/serverless-rest-api-with-dynamodb.zip"
+          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846424225-2021-01-05T11:33:44.225Z/serverless-rest-api-with-dynamodb.zip"
         },
         "FunctionName": "serverless-rest-api-with-dynamodb-dev-gettranslate",
-        "Handler": "todos/gettranslate.gettranslate",
+        "Handler": "todos/translate.gettranslate",
         "MemorySize": 1024,
         "Role": {
           "Fn::GetAtt": [
@@ -331,7 +331,7 @@
         "GettranslateLogGroup"
       ]
     },
-    "GettranslateLambdaVersionXTE5d06ZUjPKjJ0stgvmTas4QmpLF71WxOCrPSFiFk": {
+    "GettranslateLambdaVersionS2lMxlGi6iTWdk37Y1SppJfWyLpXt8qNMN4DHrkhD0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
@@ -348,7 +348,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846013406-2021-01-05T11:26:53.406Z/serverless-rest-api-with-dynamodb.zip"
+          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846424225-2021-01-05T11:33:44.225Z/serverless-rest-api-with-dynamodb.zip"
         },
         "FunctionName": "serverless-rest-api-with-dynamodb-dev-update",
         "Handler": "todos/update.update",
@@ -388,7 +388,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846013406-2021-01-05T11:26:53.406Z/serverless-rest-api-with-dynamodb.zip"
+          "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609846424225-2021-01-05T11:33:44.225Z/serverless-rest-api-with-dynamodb.zip"
         },
         "FunctionName": "serverless-rest-api-with-dynamodb-dev-delete",
         "Handler": "todos/delete.delete",
@@ -865,7 +865,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1609846011225": {
+    "ApiGatewayDeployment1609846422019": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -1158,7 +1158,7 @@
     "GettranslateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GettranslateLambdaVersionXTE5d06ZUjPKjJ0stgvmTas4QmpLF71WxOCrPSFiFk"
+        "Ref": "GettranslateLambdaVersionS2lMxlGi6iTWdk37Y1SppJfWyLpXt8qNMN4DHrkhD0"
       }
     },
     "UpdateLambdaFunctionQualifiedArn": {
