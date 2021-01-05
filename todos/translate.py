@@ -20,7 +20,7 @@ def gettranslate(event, context):
 
     response_lang = comprehend.detect_dominant_language(Text=result['Item']['text'])
     
-    slang = response_lang[0]['LanguageCode']
+    slang = response_lang['Languages'][0]['LanguageCode']
     
     result_translate = translate.translate_text(Text=result['Item']['text'], SourceLanguageCode=slang, TargetLanguageCode=event['pathParameters']['language'])
     
