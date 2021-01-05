@@ -44,8 +44,8 @@ functions:
           method: get
           cors: true
           
-  get_translate:
-    handler: todos/get_translate.get_translate
+  gettranslate:
+    handler: todos/gettranslate.gettranslate
     events:
       - http:
           path: todos/{id}/{language}
